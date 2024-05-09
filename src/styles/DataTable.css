@@ -1,0 +1,11 @@
+.datagrid-container {
+    margin-top: 20px;
+    border: solid black solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 135%;
+    height: 80%;
+    margin-left: -15%;
+    background-color: whitesmoke;
+    overflow-y: auto;
+}
