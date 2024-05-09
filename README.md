@@ -63,4 +63,4 @@ npm test
 
 ## Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/oZtDxinPE5k/0.jpg)](https://www.youtube.com/watch?v=tYI5fZWtQ9g)
+[![Demo Video](https://img.youtube.com/vi/tYI5fZWtQ9g/0.jpg)](https://www.youtube.com/watch?v=tYI5fZWtQ9g)
