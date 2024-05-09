@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import '../styles/SearchLocation.css';
 
 const SearchLocation = ({ onSearch, onClear }) => {
+    // State declaration for search location input
     const [searchLocation, setSearchLocation] = useState('');
 
+    // Event handler for search button click
     const handleSearch = () => {
         onSearch(searchLocation);
     };

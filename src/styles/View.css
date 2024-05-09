@@ -4,21 +4,25 @@
     height: 100%;
 }
 
+/* Styles for custom header in DataTable */
 .custom-header {
     background-color: rgb(198, 212, 231);
     font-size: 16px;
     font-weight: bold;
 }
 
+/* Styles for rows in DataTable */
 .MuiDataGrid-root .MuiDataGrid-row {
     background-color: #ffffff;
     color: #333;
 }
 
+/* Styles for even rows in DataTable */
 .MuiDataGrid-root .MuiDataGrid-row:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* Styles for selected rows in DataTable */
 .MuiDataGrid-root .Mui-selected {
     background-color: #007bff;
     color: black;

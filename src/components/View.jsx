@@ -7,12 +7,13 @@ import '../styles/View.css';
 const View = () => {
     const [location, setLocation] = useState([]);
     const [loading, setLoading] = useState(true);
-    const { fetchData } = useLocationAndData();
+    const { fetchData } = useLocationAndData(); // Custom hook for fetching data
 
+    // Function to handle search
     const handleSearch = async (searchLocation) => {
         try {
             setLoading(true);
-            const data = await fetchData(searchLocation);
+            const data = await fetchData(searchLocation); // Fetch data based on search location
             setLocation(data);
         } catch (error) {
             setLocation([]);
@@ -26,6 +27,7 @@ const View = () => {
         setLocation([]);
     };
 
+    // Define columns for DataTable component
     const columns = [
         { field: 'street', headerName: 'Street', width: 160 },
         { field: 'city', headerName: 'City', width: 125 },
@@ -38,7 +40,7 @@ const View = () => {
         { field: 'time_zone', headerName: 'Time Zone', width: 150 },
     ].map(column => ({
         ...column,
-        headerClassName: 'custom-header'
+        headerClassName: 'custom-header' // Custom header class for styling
     }));
 
     return (

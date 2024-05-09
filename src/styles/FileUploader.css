@@ -1,3 +1,4 @@
+/* Styles for drop area */
 .dropStyles {
     border: 2px dashed #eee;
     border-radius: '4px';
@@ -10,10 +11,12 @@
     background-color: #f0f8ff;
 }
 
+/* Hide default file input */
 .custom-file-upload input[type="file"] {
     display: none;
 }
 
+/* Styles for custom file upload container */
 .custom-file-upload {
     display: inline-block;
     cursor: pointer;
@@ -21,6 +24,7 @@
     padding: 10px;
 }
 
+/* Styles for file input label */
 #fileLabelText {
     padding: 5px 10px;
     border: 1px solid #ccc;
@@ -28,12 +32,14 @@
     background-color: #f9f9f9;
 }
 
+/* Styles for FileUploader container */
 .FileUploader {
     text-align: center;
     margin-top: 35px;
     width: 10%;
 }
 
+/* Styles for upload button */
 .buttonstyle {
     position: absolute;
     top: 15px;
@@ -46,10 +52,10 @@
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 10px;
     background-color: rgb(195, 239, 224);
-    /* background-color: plum; */
     cursor: pointer;
 }
 
+/* Styles for modal */
 .modal {
     display: flex;
     justify-content: center;
@@ -62,10 +68,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal .MuiDataGrid-scrollbar {
-    display: none;
-}
-
+/* Styles for modal content */
 .modal-content {
     background-color: #fff;
     padding: 30px;
@@ -74,14 +77,14 @@
     width: 30%;
 }
 
-
+/* Additional styles for select element inside modal */
 .modal-content select {
     width: 40%;
     padding: 5px;
     margin: 2%;
-
 }
 
+/* Additional styles for input elements inside modal */
 .modal-content input {
     width: 90%;
     height: 60%;
@@ -89,9 +92,9 @@
     margin-left: 6%;
     text-align: center;
     font-size: 16px;
-
 }
 
+/* Styles for paragraph element inside modal */
 .paragraph {
     width: 90%;
     height: 30%;
@@ -100,6 +103,7 @@
     font-size: 16px
 }
 
+/* Styles for buttons inside modal */
 .buttonModal {
     display: inline;
     justify-content: space-between;
@@ -116,6 +120,7 @@
     margin-left: 4%;
 }
 
+/* Styles for success modal */
 .success-modal {
     display: flex;
     align-items: center;
@@ -129,16 +134,16 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Styles for success modal content */
 .success-modal-content {
     background-color: rgb(171, 235, 213);
     padding: 40px;
     border: 1px solid #888;
     border-radius: 10px;
     text-align: center;
-
-
 }
 
+/* Styles for close button in success modal */
 .success-close {
     position: absolute;
     top: 38%;
@@ -149,6 +154,7 @@
     cursor: pointer;
 }
 
+/* Hover effect for close button */
 .success-close:hover,
 .success-close:focus {
     color: black;

@@ -2,6 +2,7 @@
     height: 100vh;
 }
 
+/* Styles for background image */
 .imgStyle {
     position: absolute;
     z-index: -1;

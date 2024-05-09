@@ -1,9 +1,11 @@
+/* Styles for search container */
 .search-container {
     margin: 20px auto;
     margin-bottom: 30px;
     align-items: center;
 }
 
+/* Styles for search input */
 .input {
     width: 35%;
     padding: 10px;
@@ -15,6 +17,7 @@
     border: 1px solid;
 }
 
+/* Styles for search button */
 .button {
     width: 15%;
     padding: 5px;

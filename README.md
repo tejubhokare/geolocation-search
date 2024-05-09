@@ -17,7 +17,7 @@ To get started with the project, follow these steps:
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/tejubhokare/geolocation-search-backend.git 
+   git clone https://github.com/tejubhokare/geolocation-search-frontend.git
    ```
 
 2. Navigate into the project directory:
@@ -60,3 +60,7 @@ npm test
 ```
 
 ---
+
+## Demo Video
+
+<script src="https://gist.github.com/tejubhokare/5964c2ad31f2a10594b070fb9d6aa597.js"></script>

@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/FileUploader.css';
 
+// FileUploader functional component definition
 function FileUploader() {
-    const [file, setFile] = useState(null);
+    const [file, setFile] = useState(null); // State for uploaded file
     const [modalOpen, setModalOpen] = useState(false);
     const [successModalOpen, setSuccessModalOpen] = useState(false);
     const [responseMessage, setResponseMessage] = useState('');
     const [uploadingMessage, setUploadingMessage] = useState('');
-    const [fileName, setFileName] = useState('Choose a file');
-    const uploadUrl = `${process.env.REACT_APP_API_BASE_URL}:${process.env.REACT_APP_API_PORT}/api/upload`;
+    const [fileName, setFileName] = useState('Choose a file');// State for file name display
+    const uploadUrl = `${process.env.REACT_APP_API_BASE_URL}:${process.env.REACT_APP_API_PORT}/api/upload`; // API endpoint for file upload
 
+    // Reset state when modal is opened
     useEffect(() => {
-        // Reset state when modal is opened
         if (modalOpen) {
             setFile(null);
             setFileName('Choose a file');
@@ -21,6 +22,7 @@ function FileUploader() {
         }
     }, [modalOpen]);
 
+    // Event handler for file input change
     const handleFileChange = (event) => {
         setResponseMessage('')
         const uploadedFile = event.target.files[0];
@@ -36,6 +38,7 @@ function FileUploader() {
         event.preventDefault();
     };
 
+    // Event handler for file drop
     const handleDrop = (event) => {
         event.preventDefault();
         const droppedFile = event.dataTransfer.files[0];
@@ -55,6 +58,7 @@ function FileUploader() {
         setUploadingMessage('');
     };
 
+    // Event handler for file submission
     const handleSubmit = async () => {
         if (!file) {
             alert('Please upload a file first.');
@@ -74,7 +78,7 @@ function FileUploader() {
                 body: formData,
                 headers: {
                     'Cache-Control': 'no-cache'
-                  }
+                }
             });
 
             if (response.ok) {
@@ -102,7 +106,6 @@ function FileUploader() {
                 <div className="modal">
                     <div className="modal-content" onDragOver={handleDragOver} onDrop={handleDrop}>
                         <div className='dropStyles '>
-
                             <label htmlFor="fileInput" className="custom-file-upload">
                                 <input type="file" id="fileInput" accept=".csv" onChange={handleFileChange} />
                                 <span id="fileLabelText">Choose File</span>

@@ -2,7 +2,6 @@ import FileUploader from '../components/FileUploader';
 import View from '../components/View';
 import '../styles/Home.css'
 function HomePage() {
-
     return (
         <div>
             <img src='../img/background.jpg'
