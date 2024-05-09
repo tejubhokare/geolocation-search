@@ -61,6 +61,26 @@ npm test
 
 ---
 
+## Search Score Calculation
+
+This repository contains code for calculating search scores for locations based on proximity to user coordinates and relevance to a search term.
+
+### Approach
+
+1. **Distance Match Score Calculation**:
+   - Calculate the distance between each location and the user's coordinates using the Haversine formula.
+   - Normalize the distance score.
+   
+2. **Text Match Score Calculation**:
+   - Generate searchable text by combining location details.
+   - Compute the Levenshtein distance between the searchable text and the search term.
+   - Normalize the text match score.
+   
+3. **Combining Scores**:
+   - Combine the normalized distance match score (90% weightage) and text match score (10% weightage).
+
+---
+
 ## Demo Video
 
 [![Demo Video](https://img.youtube.com/vi/tYI5fZWtQ9g/0.jpg)](https://www.youtube.com/watch?v=tYI5fZWtQ9g)
