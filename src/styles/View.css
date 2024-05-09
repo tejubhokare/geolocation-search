@@ -1,0 +1,25 @@
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    height: 100%;
+}
+
+.custom-header {
+    background-color: rgb(198, 212, 231);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.MuiDataGrid-root .MuiDataGrid-row {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.MuiDataGrid-root .MuiDataGrid-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.MuiDataGrid-root .Mui-selected {
+    background-color: #007bff;
+    color: black;
+}
