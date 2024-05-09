@@ -58,8 +58,9 @@ To run tests for the project, use the following command:
 ```
 npm test
 ```
-
 It may ask to press "a" to run all tests. When prompted please press "a" to run all the tests.
+
+
 ---
 
 ## Demo Video
