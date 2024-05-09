@@ -1,0 +1,14 @@
+.home {
+    height: 100vh;
+}
+
+.imgStyle {
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    margin-top: -2%;
+    margin-left: -50%;
+    background-size: cover;
+    background-position: center;
+    opacity: 35%
+}
