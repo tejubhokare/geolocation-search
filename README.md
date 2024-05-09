@@ -63,4 +63,4 @@ npm test
 
 ## Demo Video
 
-<script src="https://gist.github.com/tejubhokare/5964c2ad31f2a10594b070fb9d6aa597.js"></script>
+[![Demo Video](https://img.youtube.com/vi/oZtDxinPE5k/0.jpg)](https://www.youtube.com/watch?v=tYI5fZWtQ9g)
